@@ -1,0 +1,35 @@
+CREATE TABLE posts (
+	id int AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(50),
+    descricao VARCHAR(280),
+    data VARCHAR(200),
+    hora VARCHAR(200),
+    postador VARCHAR(200)
+);
+
+CREATE TABLE usuarios(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    nome varchar(200),
+    usuario varchar(200),
+    senha varchar(200),
+    email varchar(200)
+);
+
+CREATE TABLE respostas(
+	id int PRIMARY KEY AUTO_INCREMENT,
+    id_post int,
+    nome varchar(200),
+    comentario text,
+    data varchar(200),
+    hora varchar(200)
+);
+
+CREATE TABLE curtidas(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_post INT
+);
+
+CREATE TABLE materias (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    nome varchar(200)
+);
